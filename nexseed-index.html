@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome-nexseed</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/nexseed-style.css">
+</head>
+<body>
+    <header>
+       <div class="header-left">
+            <img src="./assets/img/seedkun.png" alt="logo">
+            <p style="color: yellow;">Seed</p>
+            <p style="color: white;">Kun</p>
+        </div>
+        <div class="header-right">
+            <button>sign up</button>
+            <button>sign in</button>
+        </div> 
+    </header>
+
+    <main>
+        <section class="body">
+            <div>
+                <ul class="main-tex">
+                    <li>Welcome to Nexseed Okinawa</li>
+                    <li>Be Athlete</li>
+                    <li>Go World</li>
+                    <li>Enjoy Evrything</li>
+                </ul>
+                <div class="botan">
+                    <button>sign up</button>
+                    <button>sign in</button>
+                </div>
+            </div>
+            <div class="slides">
+                <div><img src="./assets/img/background1.jpg" alt=""></div>
+                <div><img src="./assets/img/背景.jpg" alt=""></div>
+                <div><img src="./assets/img/周辺1.jpg" alt=""></div>
+            </div>
+           
+        </section>
+
+        <section class="body2">
+            <div class="main2">
+                <div class="ti"> Life Activity </div>
+
+                <div class="life-pct">
+                    <ul>
+                        
+                        <img src="./assets/img/素材3.jpg" alt="" class="pct" >
+                        <li class="text">カリキュラム</li>
+                    </ul>
+                    <ul>
+                        <img src="./assets/img/集合写真.jpg" alt="" class="pct">
+                        <li class="text">生徒達の声</li>
+                    </ul>
+                    <ul>
+                        <img src="./assets/img/講師.jpg" alt="" class="pct">
+                        <li class="text">講師紹介</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="last-body">
+            
+            <form class="last">  
+                <div class="us">contact us</div>
+                <div class="left-right">    
+                    <div class="left box">                                <!-- <label for="">お名前</label> -->
+                        <input type="text" placeholder="お名前" class="size">           <!-- <input type="date"> <input type="password"> <input type="number"> --> 
+                     <br>
+                        <input type="text" placeholder="メールアドレス" class="size">
+                     <br>
+                            <label for="">性別</label>
+                        <input type="radio" name="gender" id="male">
+                            <label for="male">男性</label>
+                        <input type="radio" name="gender" id="female">
+                            <label for="female">女性</label> 
+                    </div>
+
+                    <div class="right box">
+                        <label for="">出身地を選んでください</label>
+                        <select name="" id="">
+                            <option value="1">東京</option>
+                            <option value="2">愛媛</option>
+                            <option value="3">鹿児島</option>    <!-- valueがフォームのデータとして返ってくる -->
+                        </select>
+                     <br>
+                        <label for="">話せる言語</label>
+                            <input type="checkbox"　name="language" id="english">
+                        <label for="english">英語</label>
+                            <input type="checkbox" name="language" id="japanese">
+                 　     <label for="japanese">日本語</label>
+                        <textarea cols="40" rows="4" placeholder="問い合わせ内容"></textarea>
+                    </div>
+                </div>
+                
+                <div class="under box">
+                    <button type="submit">送信 書き方1</button> 
+                        <!-- submitは送信用のボタン -->
+                    <!-- <input type="submit" value="送信 書き方2">　 -->
+                        <!-- inputタグでも送信ボタンを作れる -->
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="./assets/img/seedkun.png" alt="logo">
+            <p style="color: yellow;">Seed</p>
+            <p style="color: white;">Kun</p>
+        </div>
+        <div class="footer-right">
+            <p style="color: white;">Copyright(C) SeedKun inc</p>
+        </div>
+
+    </footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="./assets/js/slick.js"></script>
+
+<script src="./assets/js/nexseed-app.js"></script>
+
+</body>
+</html>
+
