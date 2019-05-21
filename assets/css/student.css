@@ -1,0 +1,184 @@
+.backpct{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.backpct::before{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+  }
+
+/* ここからヘッダー */
+header{
+    width: 100%;
+    height: 80px;
+    background-color:rgba(255, 255, 255, 0.644);
+    position: fixed;
+    top: 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ header div{
+     display: flex;
+     height: 60px;
+     align-content: center;
+ }
+ .header-left{
+     margin-top: 15px;
+     margin-left: 5px;
+ }
+ .header-left img{
+     width: 50px;
+     height: 50px;
+ }
+ .header-left p{
+     margin-top: 20px;
+     font-size: 20px;
+ }
+ .header-right{
+     margin-right: 60px;
+     margin-top: 10px;
+ }
+ .header-right button{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     border: groove white 3px;
+     background-color: rgba(0, 0, 139, 0.253);
+     color: white;
+     font-size: 20px;
+    
+ }
+ /* ここまでヘッダー */
+ /* ここからmain */
+
+main{
+    width: 100%;
+    
+    margin-top: 80px;
+    display: grid;
+    grid-template:
+    "h1 h1 h1"100px
+    "stu1 p1 p1"300px
+    "p2 p2 stu2"300px
+    "stu3 p3 p3"300px
+    "p4 p4 stu4"300px
+    "stu5 p5 p5"300px
+    "p6 p6 stu6"300px
+    /500px 1fr 500px;    
+    grid-gap: 30px;
+    
+}
+main p{
+    background-color: rgba(255, 255, 255, 0.884);
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 20px;
+    display: none;
+    
+}
+
+.stu1{ grid-area: stu1;
+    position: relative;
+    left: -100%;}
+.p1{ grid-area: p1; }
+
+.stu2{ grid-area: stu2;
+    position: relative;
+    right: -100%;
+ }
+.p2{ grid-area: p2; }
+
+.stu3{ grid-area: stu3; 
+    position: relative;
+    left: -100%;}
+.p3{ grid-area: p3; }
+
+.stu4{ grid-area: stu4; 
+    position: relative;
+    right: -100%; }
+.p4{ grid-area: p4; }
+
+.stu5{ grid-area: stu5;
+    position: relative;
+    left: -100%; }
+.p5{ grid-area: p5; }
+
+.stu6{ grid-area: stu6; 
+    position: relative;
+    right: -100%; }
+.p6{ grid-area: p6; }
+
+main div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+h1{
+    grid-area: h1;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ここまでがメイン
+
+ここからがフッター */
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color:rgba(255, 255, 255, 0.644);
+}
+footer div{
+    display: flex;
+}
+.footer{
+    margin-top: 10px;
+    height: 80px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+.footer p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.footer-right{
+    margin-right: 5px;
+
+}
+.footer-right p{
+    font-size: 14px;
+}
+
+.menu button{
+    margin: 15px;
+    padding: 5px;
+    height: 40px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(240, 248, 255, 0);
+    
+}
