@@ -197,6 +197,16 @@ footer div{
 .sample_wrap{
     
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sample_table{
+    margin:0 auto;
+    
+}
+.sample_th{
+    width:100px;
 }
 th{
     margin-top:60px;
