@@ -6,7 +6,7 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: -1;
+    z-index: -5;
 }
 .backpct::before{
     background-color: rgba(0,0,0,0.4);
@@ -17,6 +17,7 @@
     left: 0;
     content: ' ';
   }
+
 
 /* ここからヘッダー */
 header{
@@ -166,6 +167,7 @@ h1{
 .inputFile i {
     color: #fff;
     cursor: pointer;
+    margin-right: 10px;
   }
   
 .inputFile i:hover {
@@ -193,7 +195,8 @@ h1{
     height: 300px;
     width: 500px;
     border-radius: 20px;
-    background-image: url(../img/kan.jpg);
+    background-image: url(../img/完2.png);
+    object-fit: cover;
     
 }
 .contents p{

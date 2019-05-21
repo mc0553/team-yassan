@@ -109,7 +109,7 @@ addBtn.addEventListener('click',function(){
     addFileImg.appendChild(imgPct);
 
     // プレビュー画像を空にする
-    document.getElementById('preview').src = '';
+    document.getElementById('preview').src = '(../img/kan.jpg)';
 
 
     //addFileに挿入するDIVを作成
@@ -122,7 +122,9 @@ addBtn.addEventListener('click',function(){
             contents.appendChild(pText);
             contents.appendChild(imgPct);
    
+    $("html,body").animate({scrollTop:$('.footer').offset().top}, 2000 );
 
-
+    
 
 })
+
