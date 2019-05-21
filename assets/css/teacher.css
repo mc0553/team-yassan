@@ -65,7 +65,7 @@ header{
      box-sizing: border-box;
  }
  #teacher h1 {
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
      margin: 20px;
      font-size: 36px;
      color:lightcoral;
@@ -73,34 +73,107 @@ header{
 
  #teacher span {
     margin: 20px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
  #teacher p {
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
      color: #373a6d;
      margin: 20px;
      font-size: 20px;
      line-height: 1.5;
  }
+.english {
+    padding: 20px;
+} 
 
- .name button{
-    margin: 15px;
-    padding: 10px;
-    height: 40px;
-    color: #6fc2d0;
-    font-weight: bold;
-}
+ /*ボタン設定  */
+ .button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    outline: none;
+    position: relative;
+    perspective: 300px;
+    padding: 5px 50px;
 
-
+  }
+  .button::before,
+  .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .button,
+  .button::before,
+  .button::after {
+    transition: all .5s;
+  }
+  
+  .button span {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #373a6d;
+    text-align: center;
+    line-height: 56px;
+    box-sizing: border-box;
+    transition: all .5s;
+    pointer-events: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+  .button span:nth-child(1) {
+    background-color: #373a6d;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -30px;
+  }
+  .button span:nth-child(2) {
+    background-color: #fff;
+    color: #373a6d;
+    transform: rotateX(0deg);
+    transform-origin: 50% 50% -30px;
+  }
+  .button:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .button:hover span:nth-child(2) {
+    background-color: #373a6d;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
 
 /* イベント用 */
-#ikesan img,#ikesan p {
-    display: none;
+.proteacher {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
-#kansan img,#kansan p {
-    display: none;
+
+#ikesan, #kansan {
+    width: 50%;
+}
+.programming img {
+    width: 80%;
+}
+
+#ikesan img,#kansan img {
+    margin-top: 60px;
+    width: 60%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#kansan p,#ikesan p {
+    font-size: 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .swiper-container {
     width: 70%;
@@ -110,7 +183,7 @@ header{
  /*ここからフッター  */
  footer{
      width: 100%;
-     height: 100px;
+     height: 80px;
      background-color: #373a6d; 
      margin-bottom: 0px;
      display:flex;
@@ -126,7 +199,6 @@ header{
      margin-left: 10px;
  }
  .footer-left img{
-     margin-top: 10px;
      width: 60px;
      height: 60px;
  }
