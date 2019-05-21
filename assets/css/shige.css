@@ -85,6 +85,7 @@ tbody
         height: auto;
         text-align: center;
         vertical-align: middle;
+        border: solid white ;
     }
 p{
         font:20px;
@@ -134,7 +135,9 @@ p{
     height: auto;
     text-align: center;
     vertical-align: middle;      
-    border-collapse: collapse;
+    border-collapse: separate;
+    border:solid white ;
+ 
 }
 
 .curicuramweek{
@@ -189,3 +192,76 @@ footer div{
 .footer-right p{
     margin-top: 80px;
 }
+
+
+.sample_wrap{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sample_table{
+    margin:0 auto;
+    
+}
+.sample_th{
+    width:100px;
+}
+th{
+    margin-top:60px;
+}
+
+.sample_table{
+  justify-content:  center ;
+}
+.sample_button{
+    background-color: #0582ba;
+    color:white;
+    margin-bottom: 40px;
+}
+.sample_button:hover{
+    background-color: #fff;
+    color:#0582ba;
+}
+.yycountdown-box{
+    text-align:center;
+    margin:10px 0;
+    color:#000000;
+  }
+   
+  #timerOlympic .yycountdown-box .yyc-day{
+    font-size:3.0em;
+    color:#0085C7;
+  }
+  #timerOlympic .yycountdown-box .yyc-hou{
+    font-size:3.0em;
+    color:#F4C300;
+  }
+  #timerOlympic .yycountdown-box .yyc-min{
+    font-size:3.0em;
+    color:#009F3D;
+  }
+  #timerOlympic .yycountdown-box .yyc-sec{
+    font-size:3.0em;
+    color:#DF0024;
+  }
+   
+  #timerOlympic .yycountdown-box .yyc-day-text,
+  #timerOlympic .yycountdown-box .yyc-hou-text,
+  #timerOlympic .yycountdown-box .yyc-min-text,
+  #timerOlympic .yycountdown-box .yyc-sec-text{
+    font-size:1.0em;
+  }
+
+
+  #timerOlympic{
+      text-align: center;
+      font-size: 40px;
+      color:#0085C7;
+  }
+  .count{
+      text-align: center;
+      margin-bottom: 30px;
+      font-size:40px;
+  }
