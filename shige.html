@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>welcome-nexseed</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/shige.css">
- 
+    <link rel="stylesheet" href="./assets/css/jquery.yycountdown.css">
+    <link rel="stylesheet" href="./assets/css/shige.css"> 
 </head>
 <body>
     
@@ -121,7 +121,32 @@
 
 
     </main>
-   
+   <aside>
+ 
+        <div class="count" id='olympic'>Okinawa<span>●</span>2019</div>
+ 
+        <div class="count" id='olympicDate'>NexSeed class from July</div>
+         
+        <div id='timerOlympic'></div>
+
+        <div class="sample_wrap">
+                <h1 class="sample_h1">授業料お見積り(3weeks~12weeks)</h1>
+                <p class="sample_p">１００＄/per a week</p>
+                <form class="sample_form" method="post" action="">
+                    <table class="sample_table">
+                        <tr>
+                            <th class="sample_th">weeks</th>
+                            <td class="sample_td"><input value="" name="textbox01" type="text" id="jsNum" class="sample_input">weeks</td>
+                        </tr>
+                        <tr>
+                            <th class="sample_th">合計（＄）</th>
+                            <td class="sample_td"><input value="" name="textbox02" type="text" id="jsPrice" class="sample_input" readonly>ドル</td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="sample_button">資料請求・お問い合わせ</button>
+                </form>
+            </div>
+   </aside>
     <footer>
         <div class="footer-left">
             <img src="./assets/img/seedkun.png" alt="logo">
@@ -133,15 +158,10 @@
         </div>
 
     </footer>
-
-
-    
-
- 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-<script src="./assets/js/shige.js"></script>
-
+   
+    <script type="text/javascript" src="./assets/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.yycountdown.min.js"></script>
+    <script src="./assets/js/shige.js"></script>
 </body>
 </html>
