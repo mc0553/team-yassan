@@ -8,41 +8,53 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/teacher.css">
     <link rel="stylesheet" href="./assets/css/jquery-letterfx.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+</head>
 </head>
 <body>
-    <header>
-       <div class="header-left">
-            <img src="./assets/img/seedkun.png" alt="logo">
-            <p style="color: yellow;">Seed</p>
-            <p style="color: white;">Kun</p>
-        </div>
-        <div class="header-right">
-            <button>sign up</button>
-            <button>sign in</button>
-        </div> 
-    </header>
+        <header>
+            <div class="header-left">
+                <img src="./assets/img/seedkun.png" alt="logo">
+                <p style="color: yellow;">Seed</p>
+                <p style="color:fuchsia;">Kun</p>
+            </div>
+            <div class="menu">
+                <button>HOME</button>
+                <button>カリキュラム</button>
+                <button>生徒の声</button>
+                <button>講師紹介</button>
+            </div>
+            <div class="header-right">
+                <button>sign up</button>
+                <button>sign in</button>
+            </div> 
+        </header>
 
     <main id="teacher">
         <section>
-            <div>
-                <h1 class="tagline">NexSeed 沖縄校 ３期　講師紹介</h1>
-                <div class="kocho"> 
-                    <img src="./assets/img/kocho-0.jpg" alt="NexSeed沖縄校　校長">
-                    <img src="./assets/img/kocho-1.jpg" alt="NexSeed沖縄校　校長">
-                    <img src="./assets/img/kocho-2.jpg" alt="NexSeed沖縄校　校長">
+            <h1 class="tagline1">NexSeed 沖縄校 ３期　講師紹介</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper"> 
+                    <img class="swiper-slide" src="./assets/img/kocho-0.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/kocho-1.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/kocho-2.jpg" alt="">
                 </div> 
-                <p>NexSeed沖縄校　富田校長</p>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+            <p>NexSeed沖縄校　富田校長</p>
+
         </section>
 
         <section class="programming">
-            <h1 class="tagline">Programming Teacher</h1>
+            <h1 class="tagline2">Programming Teacher</h1>
             <p>世界で活躍する、経験豊富な講師陣</p>
             <img src="./assets/img/teacher.jpg" alt="エンジニア講師">
-            <div>
+
+            <div class="name">
                 <button>池さん</button>
                 <button>完さん</button>
-
             </div>
             <div id="ikesan">
                 <img src="./assets/img/ikeda.jpg" alt="池さん">
@@ -61,16 +73,21 @@
         </section>
 
         <section class="english">
-            <h1 class="tagline">English Teacher</h1>
-            <p>経験豊富な講師陣</p>
-            <img src="./assets/img/e-teacher.jpg" alt="英語講師">
-            <p>Mady & Glad</p>
-            <div class="e-team">
-                <img src="./assets/img/english-1.jpg" alt="">
-                <img src="./assets/img/english-2.jpg" alt="">
-                <img src="./assets/img/english-3.jpg" alt="">
-                <img src="./assets/img/english-4.jpg" alt="">
-                <img src="./assets/img/english-5.jpg" alt="">
+            <h1 class="tagline3">English Teacher</h1>
+            <p>経験豊富な講師陣  Mady & Glad</p>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./assets/img/e-teacher.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/english-1.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/english-2.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/english-3.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/english-4.jpg" alt="">
+                    <img class="swiper-slide" src="./assets/img/english-5.jpg" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     
@@ -91,11 +108,11 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./assets/js/teacher.js"></script>
-<script src="./assets/js/tuxsudo.min.js"></script>
-  <script src="./assets/js/jquery-letterfx.js"></script>
-
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/teacher.js"></script>
+    <script src="./assets/js/tuxsudo.min.js"></script>
+    <script src="./assets/js/jquery-letterfx.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    </body>
 </html>
 
